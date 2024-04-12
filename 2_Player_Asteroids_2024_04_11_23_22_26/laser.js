@@ -15,16 +15,6 @@ function Laser(spos, angle) {
     pop();
     
   }
-
-  //this.hits = function(asteroid) {
-  //  var d = dist(this.pos.x, this.pos.y, asteroid.pos.x, asteroid.pos.y);
-   // if (d < asteroid.r) {
-   //   return true;
-   // } else {
-   //   return false;
-   // }
- // }
-  
   
   this.hits = function(asteroid3) {
     var d = dist(this.pos.x, this.pos.y, asteroid3.pos.x, asteroid3.pos.y);
