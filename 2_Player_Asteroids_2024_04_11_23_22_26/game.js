@@ -12,13 +12,9 @@ function game(){
     if (timerValue >= 0 && ship.hits(asteroids[i])) {
       console.log('ooops blue!');
       screen = 2;
-////replace text with Spaec Ship SFX
-text("space ship crash", width/2, height/2);
     } else if (timerValue >= 0 && ship2.hits(asteroids[i])) {
       console.log('ooops red!');
       screen = 3;
-////replace text with Spaec Ship SFX
-text("space ship crash", width/2, height/2);
     }
     asteroids[i].render();
     asteroids[i].update();
@@ -30,8 +26,6 @@ text("space ship crash", width/2, height/2);
     if (timerValue >= 0 && ship.hits(asteroids2[e])) {
       console.log('ooops blue!');
       screen = 2;
-////replace text with Spaec Ship SFX
-text("space ship crash", width/2, height/2);
     } 
     asteroids2[e].render();
     asteroids2[e].update();
@@ -43,8 +37,6 @@ text("space ship crash", width/2, height/2);
     if (timerValue >= 0 && ship2.hits(asteroids3[b])) {
       console.log('ooops blue!');
       screen = 3;
-////replace text with Spaec Ship SFX
-text("space ship crash", width/2, height/2);
     } 
     asteroids3[b].render();
     asteroids3[b].update();
@@ -67,8 +59,6 @@ text("space ship crash", width/2, height/2);
           asteroids3.splice(b, 1);
           lasers.splice(i, 1);
           sound3.play();
-////replace text with asteroid breaking SFX
-text("asteroid break", width/2, height/2)
           break;
         }
       }
@@ -90,8 +80,6 @@ text("asteroid break", width/2, height/2)
           asteroids2.splice(e, 1);
           lasers2.splice(i, 1);
           sound3.play();
-////replace text with asteroid breaking SFX
-text("asteroid break", width/2, height/2)
           break;
         }
       }
