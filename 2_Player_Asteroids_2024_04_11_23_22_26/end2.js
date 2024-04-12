@@ -1,7 +1,7 @@
 function end2(){
     if(!sound1.isPlaying()){
     sound1.play();
-      sound1.setVolume(1.5);
+      sound1.setVolume(1.2);
   } 
   fill (50, 50, 255);
   textSize(100);
