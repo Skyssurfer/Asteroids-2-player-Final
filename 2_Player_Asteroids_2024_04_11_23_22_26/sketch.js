@@ -72,8 +72,6 @@ function keyPressed() {
   if (keyCode == DOWN_ARROW) {
     lasers.push(new Laser(ship.pos, ship.heading));
     sound2.play();
-////replace text with laser 1 SFX
-text("laser1", width/2, height/2);
   } else if (keyCode == RIGHT_ARROW) {
     ship.setRotation(0.1);
   } else if (keyCode == LEFT_ARROW) {
@@ -85,8 +83,6 @@ text("laser1", width/2, height/2);
   if (keyCode == 83) {
     lasers2.push(new Laser2(ship2.pos, ship2.heading));
     sound2.play();
-////replace text with laser 1 SFX
-text("laser2", width/2, height/2);
   } else if (keyCode == 68) {
     ship2.setRotation(0.1);
   } else if (keyCode == 65) {
