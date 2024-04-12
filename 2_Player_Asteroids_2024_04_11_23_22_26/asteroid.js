@@ -41,8 +41,6 @@ function Asteroid(pos, r) {
   }
 
   this.breakup = function() {
-////replace text with asteroid breaking SFX
-     text("asteroid break", width/2, height/2)
     var newA = [];
     newA[0] = new Asteroid(this.pos, this.r);
     newA[1] = new Asteroid(this.pos, this.r);
